@@ -37,6 +37,21 @@
             buildInputs = (old.buildInputs or [ ]) ++ [ self.setuptools ];
           }
         );
+        argo-client = super.argo-client.overridePythonAttrs (
+          old: {
+            buildInputs = (old.buildInputs or [ ]) ++ [ self.setuptools ];
+          }
+        );
+        cryptol = super.cryptol.overridePythonAttrs (
+          old: {
+            buildInputs = (old.buildInputs or [ ]) ++ [ self.setuptools ];
+          }
+        );
+        saw-client = super.saw-client.overridePythonAttrs (
+          old: {
+            buildInputs = (old.buildInputs or [ ]) ++ [ self.setuptools ];
+          }
+        );
       };
       my-name = "comparator";
     in {
