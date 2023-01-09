@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "comparator"
+version = "0.1.0"
+description = ""
+authors = ["Roland Coeurjoly <rolandcoeurjoly@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+saw-client = "^0.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+comparator = "comparator:main"
